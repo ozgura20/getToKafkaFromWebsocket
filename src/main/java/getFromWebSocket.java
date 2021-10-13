@@ -76,7 +76,7 @@ public class getFromWebSocket extends WebSocketClient {
     public static void main(String[] args) throws URISyntaxException {
 
         //define kafka connection
-        properties.put("bootstrap.servers", "193.255.52.116:9092");
+        properties.put("bootstrap.servers", "Host:port");
         properties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         properties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         kafkaProducer = new KafkaProducer(properties);
